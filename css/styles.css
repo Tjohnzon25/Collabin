@@ -1,0 +1,21 @@
+body{
+    background-image: linear-gradient(to right, #3a1c71, #ffaf7b);
+}
+
+nav a{
+    color: white;
+    margin-left: 16px;
+}
+
+nav button{
+    margin-right: 20px;
+}
+
+#signInBtn{
+    border: none;
+}
+
+#signInBtn:hover{
+    color: #3a1c71;
+    background-color: none;
+}
