@@ -1,10 +1,15 @@
-body{
-    background-image: linear-gradient(to right, #3a1c71, #ffaf7b);
+#container{
+/*    background-image: linear-gradient(to right, #3a1c71, #ffaf7b);*/
+    background-image: url("/img/notes.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
 }
 
 nav a{
-    color: white;
+    color: #937EBB;
     margin-left: 16px;
+    font-weight: bold;
 }
 
 nav button{
@@ -12,10 +17,46 @@ nav button{
 }
 
 #signInBtn{
-    border: none;
+    border: #937EB;
 }
 
-#signInBtn:hover{
+#signUpBtn{
+    color: #937EB;
+}
+
+#signInBtn:hover, #signUpBtn:hover{
     color: #3a1c71;
-    background-color: none;
+    background-color: white;
+}
+
+#contact-div{
+    background-color: #F5F5F5;
+    text-align: center;
+}
+
+.content{
+    display: table;
+    text-align: right;
+    margin-right: 300px;
+    color: black;
+}
+
+.content h2{
+    font-size: 120px;
+    margin-left: 600px;
+    inline-size: 1000px;
+}
+
+.content p{
+    margin-top: 100px;
+    font-size: 30px;
+}
+
+
+.content span{
+    background-color: #937EBB
+}
+
+#collabity-h2{
+    margin-top: 30px;
 }

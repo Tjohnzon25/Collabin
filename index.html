@@ -10,32 +10,39 @@
     </head>
     
     <body>
-        <nav class="navbar justify-content-between">
-            <div>
-                <a class="navbar-brand" href="index.html">Collabin'<a>
-                <a class="navbar-brand" href="index.html">Learn<a>
-                <a class="navbar-brand" href="index.html">Features<a>
-                <a class="navbar-brand" href="index.html">Pricing<a>
-                <a class="navbar-brand" href="index.html">Contact Us<a>
-            </div>
+        
+        <div id="container">
+            <nav class="navbar justify-content-between">
+                <div>
+                    <a class="navbar-brand" href="index.html">Collabity</a>
+                    <a class="navbar-brand" href="#">Learn</a>
+                    <a class="navbar-brand" href="#">Features</a>
+                    <a class="navbar-brand" href="#">Pricing</a>
+                    <a class="navbar-brand" href="#">Contact Us</a>
+                </div>
+                
+                <div>
+                    <a href="loginPage.html"><button id="signInBtn" class="btn btn-outline-light my-2 my-sm-0">Sign In</button></a>
+                    <button id="signUpBtn" class="btn btn-light my-2 my-sm-0">Sign Up</button>
+                </div>
+                
+            </nav>
             
-            <button id="signInBtn" class="btn btn-outline-light my-2 my-sm-0">Sign In</button>
-            <button id="signUpBtn" class="btn btn-light my-2 my-sm-0">Sign Up</button>
-        </nav>
         
-        <section>
-            <p>The easiest way to collab with other musicians</p>
-            <h2>Welcome to Collabin'</h2>
-        </section>
+            <div class="content">
+                <p><span>The easiest way to collab with musicians</span></p>
+                <h2><span>Welcome to </span></h2>
+                <h2 id="collabity-h2"><span>Collabity</span></h2>
+            </div>
+        </div>
         
-        <section id="contact">
+        <div id="contact-div" class="p-5">
             <h2>Contact Us</h2>
             <input id="contactName" type="text" placeholder="Enter your name">
             <input id="contactMessage" type="text" placeholder="Enter your message">
-        </section>
-                    
-        <img src="img/collabityLogoTransparent.png">
-    
+        </div>
+        
+
     </body>
 
 </html>
