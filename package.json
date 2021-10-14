@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/Tjohnzon25/Collabin#readme",
   "dependencies": {
+    "body-parser": "*",
     "ejs": "^3.1.6",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mysql": "github:mysqljs/mysql",
+    "parse": "^3.3.1"
   }
 }

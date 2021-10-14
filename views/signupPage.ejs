@@ -1,6 +1,9 @@
 <html>
 
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Collabity</title>
         <link href="css/signupPage.css" rel="stylesheet" type="text/css" />
     </head>
     
@@ -14,7 +17,7 @@
                 </section>
             </div>
             <div class="right">
-                <form>
+                <form method="POST" action="/signup">
                     <section class="copy">
                         <h2>Sign Up</h2>
                         <div class="login-container">
@@ -25,6 +28,11 @@
                     <div class="input-container name">
                         <label for="fname">Full Name</label>
                         <input id="fname" name="fname" type="text">
+                    </div>
+                    
+                    <div class="input-container username">
+                        <label for="username">Username</label>
+                        <input id="username" name="username" type="text">
                     </div>
                     
                     <div class="input-container email">
@@ -52,8 +60,6 @@
                 </form>
             </div>
         </div>
-    
-        <script src="scripts/signup.js"></script>
     </body>
 
 </html>
