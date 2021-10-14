@@ -1,0 +1,82 @@
+:root{
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 100vw;
+    height: 100vh;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+#container{
+    background-image: url("../img/welcome-background.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    background-color: white;
+}
+nav a{
+    color: black;
+    margin-left: 16px;
+}
+nav button{
+    margin: 0.5rem;
+}
+#signInBtn{
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.85rem;
+}   
+#signUpBtn{
+    color: black;
+    border: 1px solid black;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.85rem;
+}
+#signInBtn:hover, #signUpBtn:hover{
+    color: white;
+    background-color: black;
+}
+#contact-div{
+    background-color: #F5F5F5;
+    text-align: center;
+}
+.content{
+    display: table;
+    text-align: right;
+    margin-right: 500px;
+    color: black;
+    max-height: 100vh;
+}
+.content h2{
+    font-size: 120px;
+    margin-left: 400px;
+    inline-size: 1000px;
+/*    max-width: fit-content;*/
+}
+.content p{
+    margin-top: 100px;
+    font-size: 30px;
+}
+#started{
+    margin-left: 70%;
+    font-size: 1.25rem;
+    color: black;
+    background: white;
+    text-decoration: none;
+}
+#started:hover{
+    background-color: #D0D3D4;
+}
+.content span{
+    color: white;
+    font-weight: bold;
+}
+#collabity-h2{
+    margin-top: 30px;
+}

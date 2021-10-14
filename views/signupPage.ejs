@@ -1,0 +1,59 @@
+<html>
+
+    <head>
+        <link href="css/signupPage.css" rel="stylesheet" type="text/css" />
+    </head>
+    
+    <body>
+    
+        <div class="split-screen">
+            <div class="left">
+                <section class="copy">
+                    <h1>Expand your horizon</h1>
+                    <p>Easiest way to collab with musicians near you</p>
+                </section>
+            </div>
+            <div class="right">
+                <form>
+                    <section class="copy">
+                        <h2>Sign Up</h2>
+                        <div class="login-container">
+                            <p>Already have an account? <a href="loginPage.html"><strong>Log In</strong></a></p>
+                        </div>
+                    </section>
+                    
+                    <div class="input-container name">
+                        <label for="fname">Full Name</label>
+                        <input id="fname" name="fname" type="text">
+                    </div>
+                    
+                    <div class="input-container email">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="text">
+                    </div>
+                    
+                    <div class="input-container password">
+                        <label for="password">Password</label>
+                        <input id="password" name="password" type="text" placeholder="Must be at least 6 characters">
+                        <i class="far fa-eye-slash"></i>
+                    </div>
+                    
+                    <div class="input-container cta">
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            Sign up for email updates.
+                        </label>
+                        <br>
+                        <button class="signup-btn" type="submit">Sign Up</button>
+                        <section class="copy legal">
+                            <p><span class="small">By continuing, you agree to accept our <br> <a href="#">Privacy Policy</a> &amp; <a href="#">Terms of Service</a>.</span></p>
+                        </section>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+        <script src="scripts/signup.js"></script>
+    </body>
+
+</html>
