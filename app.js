@@ -28,12 +28,13 @@ app.get('/signup', (req, res) =>{
 // Request the Log in passing the email and password
 app.post('/login', async(req, res) => {
   let infoUser = req.body;
-  
+    
   try{
-    let user = await Parse.User.logIn(infoUser.email, inforUser.password);
-    res.render('main');
+    let user = await Parse.User.logIn(infoUser.username, infoUser.password);
+    res.render('main', {infoUser: infoUser});
   } catch (error){
     res.render('loginPage');
+    
   }
 });
 
@@ -49,7 +50,7 @@ app.post('/signup', async(req, res) => {
 
   try{
     await user.signUp();
-    res.render('main');
+    res.render('main', {infoUser: infoUser});
   } catch (error) {
     res.render('signupPage');
       console.log(error);
