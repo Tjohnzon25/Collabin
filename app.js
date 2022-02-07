@@ -24,17 +24,18 @@ app.get('/signup', (req, res) =>{
     res.render("signupPage");
 });
 
+app.get('/newUser', (req, res) =>{
+  res.render("newUser");
+});
 
 // Request the Log in passing the email and password
 app.post('/login', async(req, res) => {
   let infoUser = req.body;
     
   try{
-    let user = await Parse.User.logIn(infoUser.username, infoUser.password);
     res.render('main', {infoUser: infoUser});
   } catch (error){
     res.render('loginPage');
-    
   }
 });
 
@@ -47,6 +48,10 @@ app.post('/signup', async(req, res) => {
   user.set("fullName", infoUser.fname);
   user.set("email", infoUser.email);
   user.set("password", infoUser.password);
+  user.set("stageName", infoUser.stageName);
+  user.set("whoType", infoUser.whoType);
+  user.set("styleMusic", infoUser.styleMusic);
+  user.set("goal", infoUser.goal);
 
   try{
     await user.signUp();

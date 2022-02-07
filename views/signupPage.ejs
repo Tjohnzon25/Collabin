@@ -21,7 +21,7 @@
                     <section class="copy">
                         <h2>Sign Up</h2>
                         <div class="login-container">
-                            <p>Already have an account? <a href="loginPage.html"><strong>Log In</strong></a></p>
+                            <p>Already have an account? <a href="login"><strong>Log In</strong></a></p>
                         </div>
                     </section>
                     
@@ -44,6 +44,53 @@
                         <label for="password">Password</label>
                         <input id="password" name="password" type="text" placeholder="Must be at least 6 characters">
                         <i class="far fa-eye-slash"></i>
+                    </div>
+
+                    <div class="select-container who">
+                        <label>Who are you?</label>
+                        <select name="whoType">
+                            <option value="Band">Band</option>
+                            <option value="Producer">Producer</option>
+                            <option value="Singer">Singer</option>
+                            <option value="Songwriter">Songwriter</option>
+                        </select>
+                    </div>
+
+                    <div class="select-container stageName">
+                        <label for="stageName">What is your stage name?</label>
+                        <input id="stageName" type="text" name="stageName" placeholder="Leave blank if none">
+                    </div>
+                    
+                    <div class="select-container styleMusic">
+                        <label>What is your style of music?</label>
+                        <select name="styleMusic">
+                            <option value="Alternative">Alternative</option>
+                            <option value="Acapella">Acapella</option>
+                            <option value="Blues">Blues</option>
+                            <option value="Classical">Classical</option>
+                            <option value="Country">Country</option>
+                            <option value="Electronic">Electronic</option>
+                            <option value="Folk">Folk</option>
+                            <option value="Jazz">Jazz</option>
+                            <option value="Latin">Latin</option>
+                            <option value="Pop">Pop</option>
+                            <option value="Musicals">Musicals</option>
+                            <option value="Rock">Rock</option>
+                            <option value="R&B">R&B</option>
+                            <option value="Rap">Rap</option>
+                            <option value="Religious">Religious</option>
+                        </select>
+                    </div>
+
+                    <div class="select-container goal">
+                        <label>What best describes your goal?</label>
+                        <select name="goal">
+                            <option value="friends">Looking for new friends</option>
+                            <option value="producer">Looking to find a music producer</option>
+                            <option value="band">Looking for a band to play with</option>
+                            <option value="collab">Looking to collaborate with someone</option>
+                            <option value="unsure">Not sure yet</option>
+                        </select>
                     </div>
                     
                     <div class="input-container cta">

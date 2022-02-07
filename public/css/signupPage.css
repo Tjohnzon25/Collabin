@@ -78,7 +78,7 @@ form input[type="password"]{
 }
 label{
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
     font-size: 0.75rem;
 }
 .input-container.password{
@@ -106,6 +106,19 @@ label{
     background: #3f3f3f;
     cursor: pointer;
 }
+
+.select-container select{
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    margin-bottom: 1.25rem;
+}
+
+.select-container option{
+    font-size: 0.875rem;
+}
+
 @media screen and (min-width: 900px){
     .split-screen{
         flex-direction: row;
